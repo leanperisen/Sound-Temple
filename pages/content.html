@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <script src="https://kit.fontawesome.com/345a8e5f51.js" crossorigin="anonymous"></script>
+        <title>Sound Temple - Where the music is alive</title>
+
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../index.html"><img src="../icons/icon-soundtemple.png" alt=""></a>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="content.html">Content</a></li>
+                    <li><a href="../pages/tickets.html">Tickets</a></li>
+                    <li><a href="../pages/about-us.html">About us</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Your favourite artists are here</h1>
+
+            <div class="search__container">
+                <!-- <button class="switch__btn" id="switch__btn">
+                    <span><i class="fas fa-sun"></i></span>
+                    <span><i class="fas fa-moon"></i></span>
+                </button> -->
+                <input type="search" id="site-search" name="site-search">
+                <a href="#" class="btn btn--search">Search</a>
+            </div>
+            
+            <section class="grid__container">
+                <img class="grid__item" src="https://picsum.photos/900/500" width="400" height="515" alt="">
+                <img class="grid__item" src="https://picsum.photos/600/900" width="400" height="425" alt="">
+                <img class="grid__item" src="https://picsum.photos/950/600" width="400" height="320" alt="">
+                <img class="grid__item" src="https://picsum.photos/400/300" width="400" height="553" alt="">
+                <img class="grid__item" src="https://picsum.photos/700/900" width="400" height="480" alt="">
+                <img class="grid__item" src="https://picsum.photos/900/900" width="400" height="360" alt="">
+                <img class="grid__item" src="https://picsum.photos/600/800" width="400" height="450" alt="">
+                <img class="grid__item" src="https://picsum.photos/500/910" width="400" height="335" alt="">
+                <img class="grid__item" src="https://picsum.photos/900/900" width="400" height="487" alt="">
+                <img class="grid__item" src="https://picsum.photos/900/810" width="400" height="500" alt="">
+                <img class="grid__item" src="https://picsum.photos/400/900" width="400" height="422" alt="">
+                <img class="grid__item" src="https://picsum.photos/500/910" width="400" height="321" alt="">
+                <img class="grid__item" src="https://picsum.photos/800/510" width="400" height="150" alt="">
+                <img class="grid__item" src="https://picsum.photos/900/910" width="400" height="465" alt="">
+                <img class="grid__item" src="https://picsum.photos/900/710" width="400" height="305" alt="">
+                <img class="grid__item" src="https://picsum.photos/610/910" width="400" height="386" alt="">
+                <img class="grid__item" src="https://picsum.photos/500/910" width="400" height="498" alt="">
+                <img class="grid__item" src="https://picsum.photos/900/830" width="400" height="490" alt="">
+                <img class="grid__item" src="https://picsum.photos/900/910" width="400" height="324" alt="">
+                <img class="grid__item" src="https://picsum.photos/900/310" width="400" height="510" alt="">
+                <img class="grid__item" src="https://picsum.photos/700/910" width="400" height="320" alt="">
+                <img class="grid__item" src="https://picsum.photos/800/510" width="400" height="150" alt="">
+                <img class="grid__item" src="https://picsum.photos/900/910" width="400" height="465" alt="">
+                <img class="grid__item" src="https://picsum.photos/900/710" width="400" height="305" alt="">
+                <img class="grid__item" src="https://picsum.photos/610/910" width="400" height="386" alt="">
+                <img class="grid__item" src="https://picsum.photos/500/910" width="400" height="498" alt="">
+                <img class="grid__item" src="https://picsum.photos/900/830" width="400" height="490" alt="">
+                <img class="grid__item" src="https://picsum.photos/900/910" width="400" height="324" alt="">
+                <img class="grid__item" src="https://picsum.photos/900/310" width="400" height="510" alt="">
+                <img class="grid__item" src="https://picsum.photos/700/910" width="400" height="320" alt="">
+
+            </section>
+        </main>
+
+        <footer>
+            <div class="social__media">
+                <h3>Join the band</h3>
+                <div class="sm__icons">
+                    <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
+                    <a href="#"><span class="iconify" data-icon="akar-icons:youtube-fill" data-inline="false"></span></a>
+                    <a href="#"><span class="iconify" data-icon="akar-icons:spotify-fill" data-inline="false"></span></a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h3>Sign up to our newsletter</h3>
+                <input type="text" placeholder="youremail@example.com">
+                <a href="#" class="btn btn--newsletter">Let's do it!</a>
+            </div>
+        </footer>
+
+        <script src="../js/main.js"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script>
+            var elem = document.querySelector('.grid__container');
+            imagesLoaded( elem, () => {
+                var msnry = new Masonry( elem, {
+                    // options
+                    itemSelector: '.grid__item',
+                    columnWidth: 400,
+                    gutter: 20,
+                    isFitWidth: true
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,154 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <script src="https://kit.fontawesome.com/345a8e5f51.js" crossorigin="anonymous"></script>
+        <title>Sound Temple - Where the music is alive</title>
+
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../index.html"><img src="../icons/icon-soundtemple.png" alt=""></a>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/content.html">Content</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="../pages/about-us.html">About us</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h1>Get your ticket!</h1>
+
+            <div class="search__container">
+                <input type="search" id="site-search" name="site-search">
+                <a href="#" class="btn btn--search">Search</a>
+            </div>
+
+            <!-- Comienzo de la sección que contendrá el carrusel/slider de imágenes -->
+            <!-- Se agrupa la información de modo de poder darle los estilos necesarios, en base a lo explicado
+            en el siguiente link: https://www.campusmvp.es/recursos/post/como-hacer-un-slider-sencillo-con-html-y-css-sin-javascript.aspx -->
+
+            <section class="carrousel__section">
+                <div class="carrousel__container">
+                    <ul class="slider__img">
+                        <li id="slide1">
+                            <img src="../img/img1.jpg" alt="">
+                        </li>
+                        <li id="slide2">
+                            <img src="../img/img2.jpg" alt="">
+                        </li>
+                        <li id="slide3">
+                            <img src="../img/img3.jpg" alt="">
+                        </li>
+                        <li id="slide4">
+                            <img src="../img/img4.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="slider__tools">
+                    <ul class="slider__menu">
+                        <li>
+                            <a href="#slide1"><i class="fas fa-circle"></i></a>
+                        </li>
+                        <li>
+                            <a href="#slide2"><i class="fas fa-circle"></i></a>
+                        </li>
+                        <li>
+                            <a href="#slide3"><i class="fas fa-circle"></i></a>
+                        </li>
+                        <li>
+                            <a href="#slide4"><i class="fas fa-circle"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Comienza la sección de fechas. Las imágenes representan fechas de conciertos, estarán dentro de 
+            artículos y serán enlaces a la compra de tickets (página X por fuera del alcance plantedao para el sitio)-->
+
+            <section class="dates__section">
+                <h2>Discover events</h2>
+
+                <div class="musictype__container">
+                    <div class="musictype__title">
+                        <h3>Rock concerts</h3>
+                        <a href="#">See all concerts</a>
+                    </div>
+
+                    <div class="dates__container">
+                        <article>
+                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                            <p>Musician 1</p>
+                        </article>
+                        <article>
+                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                            <p>Musician 2</p>
+                        </article>
+                        <article>
+                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                            <p>Musician 3</p>
+                        </article>
+                        <article>
+                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                            <p>Musician 4</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="musictype__container">
+                    <div class="musictype__title">
+                        <h3>Jazz concerts</h3>
+                        <a href="#">See all concerts</a>
+                    </div>
+
+                    <div class="dates__container">
+                        <article>
+                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                            <p>Musician 1</p>
+                        </article>
+                        <article>
+                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                            <p>Musician 2</p>
+                        </article>
+                        <article>
+                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                            <p>Musician 3</p>
+                        </article>
+                        <article>
+                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                            <p>Musician 4</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="social__media">
+                <h3>Join the band</h3>
+                <div class="sm__icons">
+                    <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
+                    <a href="#"><span class="iconify" data-icon="akar-icons:youtube-fill" data-inline="false"></span></a>
+                    <a href="#"><span class="iconify" data-icon="akar-icons:spotify-fill" data-inline="false"></span></a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h3>Sign up to our newsletter</h3>
+                <input type="text" placeholder="youremail@example.com">
+                <a href="#" class="btn btn--newsletter">Let's do it!</a>
+            </div>
+        </footer>
+
+    </body>
+</html>

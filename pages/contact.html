@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <script src="https://kit.fontawesome.com/345a8e5f51.js" crossorigin="anonymous"></script>
+        <title>Sound Temple - Where the music is alive</title>
+
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../index.html"><img src="../icons/icon-soundtemple.png" alt=""></a>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/content.html">Content</a></li>
+                    <li><a href="../pages/tickets.html">Tickets</a></li>
+                    <li><a href="../pages/about-us.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            
+            <!-- Empieza el contenedor principal de la página, que será usado como padre para aplicar FlexBox
+            a los contenedores hijos-->
+
+            <div class="contact__container">
+                <section class="info__container">
+                    <h1>Contact us</h1>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in vehicula eros, nec bibendum
+                        dui. Integer vestibulum, magna sed feugiat vestibulum, dui velit gravida dolor, non 
+                        fermentum tortor ligula ut lacus. Mauris ac dignissim augue, eu auctor felis
+                    </p>
+
+                    <div class="mail__container">
+                        <span class="iconify" data-icon="ant-design:mail-outlined" data-inline="false"></span>
+                        <h3>Mail us</h3>
+                        <p>soundtemple@gmail.com</p>
+                    </div>
+
+                    <div class="phone__container">
+                        <span class="iconify" data-icon="ant-design:phone-filled" data-inline="false"></span>
+                        <h3>Call us</h3>
+                        <p>(+54) 9 32795656</p>
+                    </div>
+
+                    <div class="location__container">
+                        <span class="iconify" data-icon="akar-icons:location" data-inline="false"></span>
+                        <h3>Here we are</h3>
+                        <p>64 W Washington Blvd, Los Angeles, California</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.3846738764364!2d-118.37299318448007!3d34.03400232613799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b9c3b97e6faf%3A0xb3408a846185e99d!2sW%20Washington%20Blvd%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1616211937416!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                </section>
+
+                <section class="form__container">    
+                    <form action="#" method="get">
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required> <br> <br>
+                        <input type="email" name="email" id="email" placeholder="Enter a valid email adress" required> <br> <br>
+                        <select name="region" id="region" required>
+                            <option value="null" disabled selected>Select your region</option>
+                            <option value="africa">Africa</option>
+                            <option value="americas">Americas</option>
+                            <option value="asia">Asia</option>
+                            <option value="australia">Australia</option>
+                            <option value="europe">Europe</option>
+                        </select> <br><br>
+                        <p>What type of music do you like?</p>
+                        <label>
+                            <input type="checkbox">
+                            Rock
+                        </label> <br>
+                        <label>
+                            <input type="checkbox">
+                            Jazz
+                        </label> <br>
+                        <label>
+                            <input type="checkbox">
+                            Funk
+                        </label> <br>
+                        <label>
+                            <input type="checkbox">
+                            Pop
+                        </label> <br>
+                        <label>
+                            <input type="checkbox">
+                            Other
+                        </label> <br> <br>
+                        <label>
+                            <input type="checkbox">
+                            Sign up to our newsletter?
+                        </label> <br><br>
+                        <textarea name="commentary" id="commentary" cols="30" rows="10" style="resize: none;" placeholder="Enter your message" required></textarea> <br>
+                        <input type="submit" value="Send" class="btn btn--send">
+                    </form>
+                </section> 
+            </div>  
+        </main>
+
+        <footer>
+            <div class="social__media">
+                <h3>Join the band</h3>
+                <div class="sm__icons">
+                    <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
+                    <a href="#"><span class="iconify" data-icon="akar-icons:youtube-fill" data-inline="false"></span></a>
+                    <a href="#"><span class="iconify" data-icon="akar-icons:spotify-fill" data-inline="false"></span></a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h3>Sign up to our newsletter</h3>
+                <input type="text" placeholder="youremail@example.com">
+                <a href="#" class="btn btn--newsletter">Let's do it!</a>
+            </div>
+        </footer>
+
+    </body>
+</html>
