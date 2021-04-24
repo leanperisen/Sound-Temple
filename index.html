@@ -11,99 +11,97 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <!-- <div class="grid__container"> -->
-            <header>
-                <div class="logo">
-                    <a href="index.html"><img src="icons/icon-soundtemple.png" alt=""></a>
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="icons/icon-soundtemple.png" alt=""></a>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/content.html">Content</a></li>
+                    <li><a href="pages/tickets.html">Tickets</a></li>
+                    <li><a href="pages/about-us.html">About us</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- Comienzo de Hero Section, conteniendo foto (grande) título y botón "CTA" -->
+
+            <section class="hero__section">
+                <div class="cta__section">
+                    <h1>Your daily music news</h1>
+                    <a class="btn btn--cta" href="#latest__content">Let's rock!</a>
                 </div>
+                <img class="hero__img" src="img/hero-section.jpg" alt="">
+            </section>
 
-                <nav class="menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="pages/content.html">Content</a></li>
-                        <li><a href="pages/tickets.html">Tickets</a></li>
-                        <li><a href="pages/about-us.html">About us</a></li>
-                        <li><a href="pages/contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <section class="news__board">
+                <h2 id="latest__content">Latest content</h2>
+                <div class="news__container">
 
-            <main>
+                    <!-- El contenedor de noticias guardará los artículos/noticias -->
 
-                <!-- Comienzo de Hero Section, conteniendo foto (grande) título y botón "CTA" -->
+                    <article class="news__card">
+                        <h3>Lorem ipsum</h3>    
+                        <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sem vitae massa scelerisque</p>
+                        <a class="btn btn--read" href="#">Read more</a>
+                    </article>
 
-                <section class="hero__section">
-                    <div class="cta__section">
-                        <h1>Your daily music news</h1>
-                        <a class="btn btn--cta" href="#latest__content">Let's rock!</a>
-                    </div>
-                    <img class="hero__img" src="img/hero-section.jpg" alt="">
-                </section>
+                    <article class="news__card">
+                        <h3>Lorem ipsum</h3>
+                        <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sem vitae massa scelerisque</p>
+                        <a class="btn btn--read" href="#">Read more</a>
+                    </article>
 
-                <section class="news__board">
-                    <h2 id="latest__content">Latest content</h2>
-                    <div class="news__container">
-
-                        <!-- El contenedor de noticias guardará los artículos/noticias -->
-
-                        <article class="news__card">
-                            <h3>Lorem ipsum</h3>    
-                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sem vitae massa scelerisque</p>
-                            <a class="btn btn--read" href="#">Read more</a>
-                        </article>
-
-                        <article class="news__card">
-                            <h3>Lorem ipsum</h3>
-                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sem vitae massa scelerisque</p>
-                            <a class="btn btn--read" href="#">Read more</a>
-                        </article>
-
-                        <article class="news__card">
-                            <h3>Lorem ipsum</h3>
-                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sem vitae massa scelerisque</p>
-                            <a class="btn btn--read" href="#">Read more</a>
-                        </article>
-                            
-                        <article class="news__card">
-                            <h3>Lorem ipsum</h3>
-                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sem vitae massa scelerisque</p>
-                            <a class="btn btn--read" href="#">Read more</a>
-                        </article>
-                        <article class="news__card">
-                            <h3>Lorem ipsum</h3>
-                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sem vitae massa scelerisque</p>
-                            <a class="btn btn--read" href="#">Read more</a>
-                        </article>
-                        <article class="news__card">
-                            <h3>Lorem ipsum</h3>
-                            <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sem vitae massa scelerisque</p>
-                            <a class="btn btn--read" href="#">Read more</a>
-                        </article>
-                    </div>
-                </section>
-            </main>
-
-            <footer>
-                <div class="social__media">
-                    <h3>Join the band</h3>
-                    <div class="sm__icons">
-                        <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
-                        <a href="#"><span class="iconify" data-icon="akar-icons:youtube-fill" data-inline="false"></span></a>
-                        <a href="#"><span class="iconify" data-icon="akar-icons:spotify-fill" data-inline="false"></span></a>
-                    </div>
+                    <article class="news__card">
+                        <h3>Lorem ipsum</h3>
+                        <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sem vitae massa scelerisque</p>
+                        <a class="btn btn--read" href="#">Read more</a>
+                    </article>
+                        
+                    <article class="news__card">
+                        <h3>Lorem ipsum</h3>
+                        <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sem vitae massa scelerisque</p>
+                        <a class="btn btn--read" href="#">Read more</a>
+                    </article>
+                    <article class="news__card">
+                        <h3>Lorem ipsum</h3>
+                        <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sem vitae massa scelerisque</p>
+                        <a class="btn btn--read" href="#">Read more</a>
+                    </article>
+                    <article class="news__card">
+                        <h3>Lorem ipsum</h3>
+                        <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sem vitae massa scelerisque</p>
+                        <a class="btn btn--read" href="#">Read more</a>
+                    </article>
                 </div>
-                <div class="newsletter">
-                    <h3>Sign up to our newsletter</h3>
-                    <input type="text" placeholder="youremail@example.com">
-                    <a href="#" class="btn btn--newsletter">Let's do it!</a>
+            </section>
+        </main>
+
+        <footer>
+            <div class="social__media">
+                <h3>Join the band</h3>
+                <div class="sm__icons">
+                    <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
+                    <a href="#"><span class="iconify" data-icon="akar-icons:youtube-fill" data-inline="false"></span></a>
+                    <a href="#"><span class="iconify" data-icon="akar-icons:spotify-fill" data-inline="false"></span></a>
                 </div>
-            </footer>
-        <!-- </div> -->
+            </div>
+            <div class="newsletter">
+                <h3>Sign up to our newsletter</h3>
+                <input type="text">
+                <a href="#" class="btn btn--newsletter">Let's do it!</a>
+            </div>
+        </footer>
     </body>
 </html>
