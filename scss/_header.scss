@@ -1,0 +1,45 @@
+header {
+    width: 100%;
+    height: 90px;
+    background: $cool-black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.menu {
+    padding: 20px;
+    a {
+        color: $cool-white;
+    }
+    ul {
+        li{
+            display: inline-block;
+            color: $cool-white;
+            padding: 5px;
+            margin: 5px;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            &::before {
+                content: "";
+                height: 1px;
+                width: 0%;
+                background: $cool-white;
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                transition: 0.3s ease-out;
+            }
+            &:hover::before{
+                width: 100%;
+            }
+        }
+    }
+}
