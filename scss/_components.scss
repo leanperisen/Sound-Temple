@@ -33,6 +33,7 @@
     background-color: $cool-white;
     color: $cool-red;
     font-weight: bold;
+    white-space: nowrap;
     &:hover {
         background-color: rgba(247,247,255,.9);
         font-weight: bolder;

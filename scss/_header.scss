@@ -43,6 +43,10 @@ nav {
     }
 }
 
+.visited {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
 
     .nav__toggle{

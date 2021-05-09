@@ -41,7 +41,7 @@ footer {
 @media (max-width: 480px) {
 
     footer {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
 }

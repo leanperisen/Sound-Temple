@@ -20,7 +20,7 @@
 }
 .news__board {
     padding: 20px;
-    margin: 30px;
+    margin: 15px;
     text-align: center;
     h2 {
         color: $cool-white;
@@ -29,7 +29,7 @@
 }
 
 .news__container {
-    margin: 30px;
+    margin: 15px;
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -81,9 +81,8 @@
 .dates__section {
     width: 90%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     h2 {
-        margin: 20px;
         position: relative;
         left: 9%;
     }
@@ -127,14 +126,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-
-.about__grid__container {
-    background: rgba(247,247,255,.2);
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
-
 }
 
 /* ---- CONTACT PAGE ---- */
@@ -190,9 +181,87 @@
 
 @media (max-width: 768px) {
 
+/* ---- INDEX ---- */
+
+    .cta__section {
+        left: 27%;
+    }
+
+/* ---- TICKETS PAGE ---- */
+
+    .dates__section {
+        h2 {
+            left: 0;
+        }
+    }
+
+    .musictype__container {
+        width: 100%;
+        article {
+            width: 90%;
+        }
+    }
+
+    .dates__container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+/* ---- CONTACT PAGE ---- */
+
     .contact__container {
         flex-direction: column;
-        margin: auto;
+        align-items: center;;
+    }
+
+    .info__container {
+        width: 90%;
+        align-items: center;
+    }
+
+    .mail__container,
+    .phone__container,
+    .location__container {
+        align-items: center;
+    }
+
+    .form__container {
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        form {
+            align-items: center;
+        }
+    }
+
+}
+
+@media (max-width: 480px) {
+
+/* ---- INDEX ---- */
+
+    .cta__section {
+        left: 14%;
+    }
+
+/* ---- TICKETS PAGE ---- */
+
+    .dates__section {
+        width: 100%;
+        h2 {
+            left: 5%;
+        }
+    }
+
+    .musictype__title {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .dates__container {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
     }
 
 }

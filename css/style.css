@@ -68,7 +68,8 @@ main {
   width: 33%;
   background-color: #F7F7FF;
   color: #a41623;
-  font-weight: bold; }
+  font-weight: bold;
+  white-space: nowrap; }
   .btn--read:hover {
     background-color: rgba(247, 247, 255, 0.9);
     font-weight: bolder;
@@ -165,6 +166,9 @@ nav {
     .menu li:hover {
       text-decoration: underline; }
 
+.visited {
+  text-decoration: underline; }
+
 @media (max-width: 768px) {
   .nav__toggle {
     display: block; }
@@ -206,14 +210,14 @@ nav {
 
 .news__board {
   padding: 20px;
-  margin: 30px;
+  margin: 15px;
   text-align: center; }
   .news__board h2 {
     color: #F7F7FF;
     margin-top: 30px; }
 
 .news__container {
-  margin: 30px;
+  margin: 15px;
   padding: 20px;
   display: flex;
   justify-content: space-around;
@@ -255,9 +259,8 @@ nav {
 .dates__section {
   width: 90%;
   margin: auto;
-  margin-top: 100px; }
+  margin-top: 50px; }
   .dates__section h2 {
-    margin: 20px;
     position: relative;
     left: 9%; }
   .dates__section p, .dates__section a {
@@ -290,12 +293,6 @@ nav {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
-
-.about__grid__container {
-  background: rgba(247, 247, 255, 0.2);
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(3, auto); }
 
 /* ---- CONTACT PAGE ---- */
 .contact__container {
@@ -339,9 +336,53 @@ nav {
   margin: 50px 0 50px 0; }
 
 @media (max-width: 768px) {
+  /* ---- INDEX ---- */
+  .cta__section {
+    left: 27%; }
+  /* ---- TICKETS PAGE ---- */
+  .dates__section h2 {
+    left: 0; }
+  .musictype__container {
+    width: 100%; }
+    .musictype__container article {
+      width: 90%; }
+  .dates__container {
+    flex-wrap: wrap;
+    justify-content: center; }
+  /* ---- CONTACT PAGE ---- */
   .contact__container {
     flex-direction: column;
-    margin: auto; } }
+    align-items: center; }
+  .info__container {
+    width: 90%;
+    align-items: center; }
+  .mail__container,
+  .phone__container,
+  .location__container {
+    align-items: center; }
+  .form__container {
+    width: 90%;
+    align-items: center;
+    justify-content: center; }
+    .form__container form {
+      align-items: center; } }
+
+@media (max-width: 480px) {
+  /* ---- INDEX ---- */
+  .cta__section {
+    left: 14%; }
+  /* ---- TICKETS PAGE ---- */
+  .dates__section {
+    width: 100%; }
+    .dates__section h2 {
+      left: 5%; }
+  .musictype__title {
+    width: 90%;
+    margin: 20px auto; }
+  .dates__container {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center; } }
 
 footer {
   bottom: 0;
@@ -374,4 +415,4 @@ footer {
 
 @media (max-width: 480px) {
   footer {
-    flex-wrap: wrap; } }
+    flex-direction: column; } }
