@@ -65,13 +65,6 @@
 
 /* ---- TICKETS PAGE ---- */
 
-.menu a {
-    text-decoration: none;
-    &:hover {
-        color: $cool-white;
-    }
-}
-
 .carrousel__section {
     width: 90%;
     margin: auto;
@@ -181,6 +174,9 @@
         label {
             color: $cool-white;
         }
+        p {
+            color: $cool-white;
+        }
     }
 }
 
@@ -190,4 +186,13 @@
 
 .mail__container, .phone__container {
     margin: 50px 0 50px 0;
+}
+
+@media (max-width: 768px) {
+
+    .contact__container {
+        flex-direction: column;
+        margin: auto;
+    }
+
 }
