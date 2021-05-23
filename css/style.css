@@ -123,7 +123,7 @@ main {
     font-size: 1rem; }
 
 .search__container {
-  width: 85%;
+  width: 90%;
   margin: 30px;
   display: flex;
   justify-content: flex-end;
@@ -179,7 +179,7 @@ nav {
     align-items: center;
     margin-right: 20px;
     background: #2F2F2F;
-    position: fixed;
+    position: absolute;
     left: 100%;
     transition: left 0.3s ease-in-out;
     top: 90px;
@@ -223,6 +223,11 @@ nav {
   justify-content: space-around;
   flex-wrap: wrap; }
 
+.card__img {
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 2px; }
+
 /* ---- CONTENT PAGE ---- */
 .grid__container {
   display: grid;
@@ -261,13 +266,12 @@ nav {
   margin: auto;
   margin-top: 50px; }
   .dates__section h2 {
-    position: relative;
-    left: 9%; }
+    text-align: center; }
   .dates__section p, .dates__section a {
     color: #F7F7FF; }
 
 .musictype__container {
-  width: 80%;
+  width: 90%;
   margin: auto; }
 
 .musictype__title {
@@ -285,6 +289,9 @@ nav {
   justify-content: space-between; }
   .dates__container article p {
     margin-top: 10px; }
+  .dates__container article .date__img {
+    max-height: 300px;
+    max-width: 300px; }
 
 /* ---- ABOUT-US PAGE ---- */
 .about-us__container {
@@ -306,6 +313,9 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end; }
+
+.par__contact {
+  text-align: end; }
 
 .mail__container,
 .phone__container,
@@ -340,15 +350,14 @@ nav {
   .cta__section {
     left: 27%; }
   /* ---- TICKETS PAGE ---- */
-  .dates__section h2 {
-    left: 0; }
+  .musictype__title {
+    justify-content: space-around; }
   .musictype__container {
     width: 100%; }
-    .musictype__container article {
-      width: 90%; }
   .dates__container {
-    flex-wrap: wrap;
-    justify-content: center; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   /* ---- CONTACT PAGE ---- */
   .contact__container {
     flex-direction: column;
@@ -356,6 +365,8 @@ nav {
   .info__container {
     width: 90%;
     align-items: center; }
+  .par__contact {
+    text-align: center; }
   .mail__container,
   .phone__container,
   .location__container {
@@ -412,6 +423,9 @@ footer {
 
 .newsletter a:hover {
   color: #F7F7FF; }
+
+.newsletter input {
+  color: #020202; }
 
 @media (max-width: 480px) {
   footer {
