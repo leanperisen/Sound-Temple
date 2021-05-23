@@ -271,7 +271,7 @@ nav {
     color: #F7F7FF; }
 
 .musictype__container {
-  width: 90%;
+  width: 80%;
   margin: auto; }
 
 .musictype__title {
@@ -291,6 +291,7 @@ nav {
     margin-top: 10px; }
   .dates__container article .date__img {
     max-height: 300px;
+    min-height: 250px;
     max-width: 300px; }
 
 /* ---- ABOUT-US PAGE ---- */

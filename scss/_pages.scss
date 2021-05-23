@@ -97,7 +97,7 @@
 }
 
 .musictype__container {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -122,6 +122,7 @@
         }
         .date__img {
             max-height: 300px;
+            min-height: 250px;
             max-width: 300px;
         }
     }
